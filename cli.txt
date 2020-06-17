@@ -1,0 +1,24 @@
+https://github.com/Asymmetrik/ngx-leaflet
+https://asymmetrik.com/ngx-leaflet-tutorial-angular-cli/
+https://stalinmaza97.hashnode.dev/angular-leaflet-routing-ck2gpl47700jgwks1r2qqhsgf
+*npm install leaflet
+*npm install @asymmetrik/ngx-leaflet
+
+*npm install --save-dev @types/leaflet
+
+
+npm install --save leaflet-routing-machine
+npm install leaflet leaflet-routing-machine leaflet-gesture-handling
+
+
+en angular.json en las secciones de 'test' y 'build' añadir:
+1:- en el apartado de style: "./node_modules/leaflet/dist/leaflet.css"
+2.- en el apartado de assets: {
+      "glob": "**/*",
+      "input": "./node_modules/leaflet/dist/images",
+      "output": "leaflet/"
+    },
+
+app.module.ts y el los modulos del componente o page
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+y el imports->LeafletModule
